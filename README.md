@@ -4,7 +4,7 @@ Clone de l'application **Netflix** à l'aide de la librairie React JS.
 
 # Live demo
 
-Site : https://xxx
+Site : https://netflix-react-clone-axel-po.vercel.app
 
 Login de test  (vous pouvez également créer un compte avec une adresse mail fictive) :
 
