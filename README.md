@@ -6,7 +6,7 @@ Clone de l'application **Netflix** à l'aide de la librairie React JS.
 
 Site : https://xxx
 
-\*Login de test : (vous pouvez également créer un compte avec une adresse mail fictive)
+Login de test : (vous pouvez également créer un compte avec une adresse mail fictive) :
 
 adresse mail : **test@gmail.com**
 mot de passe : **123456**
