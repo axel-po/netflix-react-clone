@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy } from "react";
+import { useAuth } from "./context/authContext";
+import AppProviders from "./AppProviders";
 
-function App() {
+const AuthApp = lazy(() => import(/* webpackPrefetch: true */ "./AuthApp"));
+const UnauthApp = lazy(() => import("./UnauthApp"));
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProviders>
+      <AppConsumer />
+    </AppProviders>
   );
 }
 
-export default App;
+const AppConsumer = () => {
+  const { isAuth } = useAuth();
+  return isAuth ? <AuthApp /> : <UnauthApp />;
+};
