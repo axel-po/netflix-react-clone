@@ -38,7 +38,6 @@ export default function Login() {
             E-mail
           </label>
           <input
-            defaultValue={"axelpo@free.fr"}
             {...register("identifier", {
               required: "Ce champs est requis.",
             })}
@@ -54,7 +53,6 @@ export default function Login() {
             Mot de passe
           </label>
           <input
-            defaultValue={"123456"}
             {...register("password", {
               required: "Ce champs est requis.",
             })}
