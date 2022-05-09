@@ -6,10 +6,10 @@ Clone de l'application **Netflix** à l'aide de la librairie React JS.
 
 Site : https://xxx
 
-Login de test : (vous pouvez également créer un compte avec une adresse mail fictive) :
+Login de test  (vous pouvez également créer un compte avec une adresse mail fictive) :
 
-adresse mail : **test@gmail.com**
-mot de passe : **123456**
+Eail : **test@gmail.com** </br>
+Mot de passe : **123456**
 
 ## Movie source
 
@@ -29,19 +29,21 @@ Les données de films/séries proviennent de l'API The movie DB.
 
 ## Features
 
-- Création de compte/connexion/déconnexion
+- Création de compte, connexion, déconnexion
 - Affichage des films, séries tendances
 - Découpage des catégories (films et séries)
 - Fonctionnalité de recherche de movies
 - Ajout de films à la liste des favoris (en cours de développement)
+- Application responsive >> mobile first 😏
 
 ## Installation
 
 - Cloner le projet
 - Run **npm install**
+- npm start
 
 ## Preview, Screenshots
 
 ## Conclusion
 
-Si vous avez aimez ❤️ ce projet n"hésitez à me donner une étoile ⭐️ sur ce repos et de le partager à vos amis 🧑‍💻.
+Si vous avez aimé ❤️ ce projet n'hésitez à me donner une étoile ⭐️ sur ce repos et de le partager à vos amis 🧑‍💻.
