@@ -8,7 +8,7 @@ Site : https://xxx
 
 Login de test  (vous pouvez également créer un compte avec une adresse mail fictive) :
 
-Eail : **test@gmail.com** </br>
+Email : **test@gmail.com** </br>
 Mot de passe : **123456**
 
 ## Movie source
