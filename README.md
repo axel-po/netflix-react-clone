@@ -44,6 +44,11 @@ Les données de films/séries proviennent de l'API The movie DB.
 
 ## Preview, Screenshots
 
+![page de login](https://github.com/axel-po/netflix-react-clone/blob/main/public/screens/1.png?raw=true)
+![header](https://github.com/axel-po/netflix-react-clone/blob/main/public/screens/2.png?raw=true)
+![netflix rows](https://github.com/axel-po/netflix-react-clone/blob/main/public/screens/3.png?raw=true)
+![responsive](https://github.com/axel-po/netflix-react-clone/blob/main/public/screens/5.png?raw=true)
+
 ## Conclusion
 
 Si vous avez aimé ❤️ ce projet n'hésitez à me donner une étoile ⭐️ sur ce repos et de le partager à vos amis 🧑‍💻.
