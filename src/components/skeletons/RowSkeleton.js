@@ -13,8 +13,6 @@ export default function RowSkeleton({ nbElement = 20, title = "Films" }) {
 
   const width = useWidth();
 
-  console.log(width);
-
   for (let i = 0; i < nbElement; i++) {
     postersSkeletons.push(
       <div style={styles.row} key={i} className='rounded-sm w-6/12 shrink-0 max-w-xs cursor-pointer transition-all ease-out hover:scale-110'>
