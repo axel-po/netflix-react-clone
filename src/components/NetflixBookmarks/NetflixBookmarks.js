@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Nav from "../Nav/Nav";
-import Poster from "../Poster/Poster";
 import { useFetchData } from "../../utils/hooks";
 import { getBookmarksAPI, clientApiTMDB } from "../../utils/clientApi";
 import { TYPE_MOVIE, TYPE_TV } from "../../config";

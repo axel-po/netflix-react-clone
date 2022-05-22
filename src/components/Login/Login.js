@@ -66,7 +66,7 @@ export default function Login() {
         <button
           className='bg-red text-white w-full h-[40px]  rounded cursor-pointer md:h-[50px] disabled:opacity-50 disabled:cursor-not-allowed'
           disabled={isSubmitting}>
-          S'identifier
+          {isSubmitting ? "Chargement..." : "S'identifier"}
         </button>
       </form>
       <p className='text-grayText mt-[25px] text-sm'>

@@ -1,11 +1,12 @@
+import * as React from "react";
 import { render, screen, waitForElementToBeRemoved } from "../../test/test-utils";
-import useEvent from "@testing-library/user-event";
-import Login from "../Login/Login";
+import Login from "../../components/Login/Login";
 
-test("Page Login", async () => {
+test("Composant Login", async () => {
   const connexion = "S'identifier";
-  const register = "Inscri";
+  const register = "Inscription";
 
   render(<Login></Login>);
-  expect(screen.getByRole("heading", { name: connexion })).toBeInTheDocument();
+  // await waitForElementToBeRemoved(() => screen.getAllByRole("alert"));
+  //   expect(screen.getByRole("heading", { name: connexion })).toBeInTheDocument();
 });

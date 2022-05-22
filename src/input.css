@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-theme-color: #f1f1f1 !important;
+}
+
 body {
   background-color: #141414;
 }
@@ -13,8 +17,11 @@ body {
   -webkit-box-orient: vertical;
 }
 
-/* Row */
-.row-slide {
-  overflow-x: hidden;
+/* Row Slider*/
+.swiper-wrapper {
+  padding: 20px 0;
 }
 
+.swiper-slide {
+  transition: 250ms all;
+}

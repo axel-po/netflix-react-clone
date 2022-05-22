@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import LoadingFullScreen from "./components/LoadingFullScreen/LoadingFullScreen";
 import { AuthContextProvider } from "./context/authContext";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export default function AppProviders({ children }) {
   const queryClient = new QueryClient({
@@ -32,16 +33,18 @@ export default function AppProviders({ children }) {
   });
 
   return (
-    <React.Suspense fallback={<LoadingFullScreen />}>
-      <AuthContextProvider>
-        <QueryClientProvider client={queryClient}>
-          <ErrorBoundary FallbackComponent={ErrorFallBack} onReset={() => {}}>
-            <ScrollToTop />
-            {children}
-          </ErrorBoundary>
-          {process.env.NODE_ENV === "development" && <ReactQueryDevtools initialIsOpen={false} />}
-        </QueryClientProvider>
-      </AuthContextProvider>
-    </React.Suspense>
+    <Router>
+      <React.Suspense fallback={<LoadingFullScreen />}>
+        <AuthContextProvider>
+          <QueryClientProvider client={queryClient}>
+            <ErrorBoundary FallbackComponent={ErrorFallBack} onReset={() => {}}>
+              <ScrollToTop />
+              {children}
+            </ErrorBoundary>
+            {process.env.NODE_ENV === "development" && <ReactQueryDevtools initialIsOpen={false} />}
+          </QueryClientProvider>
+        </AuthContextProvider>
+      </React.Suspense>
+    </Router>
   );
 }
