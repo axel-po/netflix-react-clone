@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSearchMovie } from "../../utils/hooks";
 import RowSkeleton from "../skeletons/RowSkeleton";
-import Poster from "../Poster/Poster";
+
 import Nav from "../Nav/Nav";
 import { buildImagePath } from "../../utils/helper";
 import { TYPE_TV } from "../../config";
@@ -30,17 +30,18 @@ export const NetflixRowView = ({ title = "Films", type = TYPE_MOVIE, filter = "p
   }
 
   return (
-    <section className='px-4 sm-2xl:px-10' style={{ marginTop: mt }}>
-      <h2 className='text-md text-white sm:text-xl font-bold mt-8 mb-5'>{title}</h2>
-      {data.length === 0 ? (
-        <p className='text-white text-center mt-14'>Aucun résultat pour votre recherche.</p>
-      ) : (
-        <div className='flex gap-2 overflow-y-hidden overflow-x-auto mb-10'>
-          {data.map((movie) => {
-            return <Poster key={movie.id} type={type} movieID={movie.id} image={buildImagePath(movie)} movieTitle={movie.title} />;
-          })}
-        </div>
-      )}
-    </section>
+    // <section className='px-4 sm-2xl:px-10' style={{ marginTop: mt }}>
+    //   <h2 className='text-md text-white sm:text-xl font-bold mt-8 mb-5'>{title}</h2>
+    //   {data.length === 0 ? (
+    //     <p className='text-white text-center mt-14'>Aucun résultat pour votre recherche.</p>
+    //   ) : (
+    //     <div className='flex gap-2 overflow-y-hidden overflow-x-auto mb-10'>
+    //       {data.map((movie) => {
+    //         return <Poster key={movie.id} type={type} movieID={movie.id} image={buildImagePath(movie)} movieTitle={movie.title} />;
+    //       })}
+    //     </div>
+    //   )}
+    // </section>
+    <></>
   );
 };
