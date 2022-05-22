@@ -25,16 +25,3 @@ body {
 .swiper-slide {
   transition: 250ms all;
 }
-
-.swiper-slide:hover {
-  transform: scale(1.12);
-  z-index: 1;
-}
-
-.swiper-slide:first-child:hover {
-  margin: 0 30px;
-}
-
-.swiper-slide:last-child:hover {
-  margin: 0 -30px;
-}

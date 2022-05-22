@@ -20,7 +20,7 @@ export default function Row({ title = "Films", type = TYPE_MOVIE, filter = "popu
 
   return (
     <section className='px-4 sm-2xl:px-10' style={{ marginTop: mt }}>
-      <h2 className='text-md font-bold text-white sm:text-xl  sm:mt-8 sm:mb-2'>{title}</h2>
+      <h2 className='text-md font-bold mt-5 text-white sm:text-xl sm:mt-8 sm:mb-2'>{title}</h2>
       <Swiper
         modules={[Navigation, Pagination]}
         loop={true}
@@ -29,9 +29,9 @@ export default function Row({ title = "Films", type = TYPE_MOVIE, filter = "popu
         navigation={width >= 650 && true}
         spaceBetween={10}>
         {data.map((movie) => (
-          <SwiperSlide key={movie.id}>
+          <SwiperSlide key={movie.id} className='z-50 md:hover:scale-[1.12] md:hover:first:mx-[30px] md:hover:last:mx-[-30px]'>
             <Link to={`/${type}/${movie?.id}`}>
-              <img className='rounded-md hover:scale-y-105' src={buildImagePath(movie)} alt={movie?.title} />
+              <img className='rounded-md' src={buildImagePath(movie)} alt={movie?.title} />
             </Link>
           </SwiperSlide>
         ))}
