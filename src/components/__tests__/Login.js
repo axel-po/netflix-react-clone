@@ -7,6 +7,6 @@ test("Composant Login", async () => {
   const register = "Inscription";
 
   render(<Login></Login>);
-
-//   expect(screen.getByRole("heading", { name: connexion })).toBeInTheDocument();
+  // await waitForElementToBeRemoved(() => screen.getAllByRole("alert"));
+  //   expect(screen.getByRole("heading", { name: connexion })).toBeInTheDocument();
 });
