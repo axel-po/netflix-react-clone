@@ -11,7 +11,7 @@ import NetflixSearch from "./components/NetflixSearch/NetflixSearch";
 export default function AuthApp() {
   return (
     <>
-      <Routes>^
+      <Routes>
         <Route path='/' element={<NetflixApp />}></Route>
         <Route path='/tv/:tvId' element={<NetflixById />}></Route>
         <Route path='/movie/:movieId' element={<NetflixById />}></Route>
