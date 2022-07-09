@@ -2,11 +2,10 @@ import axios from "axios";
 import { API_TMDB_URL, apiKey, lang, URL_BOOKMARKS, URL_LOGIN } from "../config";
 import jwtDecode from "jwt-decode";
 
-const sleep = (t) => new Promise((resolve) => setTimeout(resolve, t));
+// const sleep = (t) => new Promise((resolve) => setTimeout(resolve, t));
 
 /* Handle API The Movie DB */
 export const clientApiTMDB = async (endpoint) => {
-  await sleep(5000);
   const page = 1;
   const startChar = endpoint.includes("?") ? `&` : `?`;
   const keyLang = `${startChar}api_key=${apiKey}&language=${lang}&page=${page}`;
