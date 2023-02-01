@@ -115,7 +115,7 @@ export default function Nav() {
             }}
             className='w-[30px] h-[30px] rounded-md  bg-cover bg-center'
             onClick={() => setToggleIconUser(!toggleIconUser)}></button>
-          <div
+          {/* <div
             className={`${
               toggleIconUser ? "flex" : "hidden"
             } absolute top-[70px] right-[10px] p-5 flex-col items-center border-t-2 text-xs text-white font-light bg-lightNight sm-2xl:top-[71px]  sm-2xl:text-base`}>
@@ -123,7 +123,7 @@ export default function Nav() {
             <button className='hover:font-bold' onClick={handleLogout}>
               Se déconnecter
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
